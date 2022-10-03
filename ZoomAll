@@ -1,0 +1,10 @@
+Sub ZoomAll()
+    Dim I As Long
+    Dim xActSheet As Worksheet
+    Set xActSheet = ActiveSheet
+    For I = 1 To ThisWorkbook.Sheets.Count
+        Sheets(I).Activate
+        ActiveWindow.Zoom = 200
+    Next
+    xActSheet.Select
+End Sub
